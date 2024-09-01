@@ -30,7 +30,7 @@
 .menu-container,
 .article-container,
 .article-wrapper {
-    animation-duration: 0.5s;
+    animation-duration: 0.25s;
     animation-timing-function: var(--transition-timing);
     animation-fill-mode: both;
 }
@@ -49,17 +49,13 @@
     top: 0;
     width: 280px;
     height: 100%;
-    background-color: var(--neutralLighterAltOpacity);
-    backdrop-filter: var(--blur);
+    background-color: var(--neutralLighterAlt);
     box-shadow: 5px 0 25px #0004;
-    transition: clip-path var(--transition-timing) 0.367s,
-        opacity cubic-bezier(0, 0, 0.2, 1) 0.367s;
-    clip-path: inset(0 100% 0 0);
-    opacity: 0;
+    transition: transform var(--transition-timing) 0.25s;
+    transform: translateX(-100%);
 }
 .menu-container.show .menu {
-    clip-path: inset(0 -50px 0 0);
-    opacity: 1;
+    transform: none;
 }
 body.blur .menu .btn-group {
     --black: var(--neutralSecondaryAlt);
@@ -73,7 +69,7 @@ body.darwin .menu .btn-group {
     overflow: hidden auto;
 }
 .menu-container .menu p.subs-header {
-    font-size: 12px;
+    font-size: 1rem;
     color: var(--neutralSecondaryAlt);
     margin: 2px 8px;
     user-select: none;
@@ -108,7 +104,7 @@ body.darwin .menu .btn-group {
 .settings-container .settings {
     margin: 64px auto 0;
     width: 680px;
-    height: calc(100% - 64px);
+    height: calc(100% - 128px);
     background-color: var(--white);
     box-shadow: 0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132),
         0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108);
@@ -152,8 +148,8 @@ div[role="tabpanel"] {
     padding: 0;
 }
 img.favicon {
-    width: 16px;
-    height: 16px;
+    width: 1.5rem;
+    height: auto;
     vertical-align: middle;
     user-select: none;
 }
@@ -169,8 +165,8 @@ img.favicon.dropdown {
 }
 .settings-hint {
     user-select: none;
-    line-height: 32px;
-    font-size: 12px;
+    line-height: 2;
+    font-size: 1rem;
     color: var(--neutralSecondary);
 }
 .settings-hint.up {
@@ -248,7 +244,7 @@ body.darwin .list-main .article-search {
 }
 .main,
 .list-main {
-    transition: margin-left var(--transition-timing) 0.367s;
+    transition: margin-left var(--transition-timing) 0.25s;
     margin-left: 0;
 }
 

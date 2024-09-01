@@ -53,14 +53,18 @@
 }
 .article .actions .favicon,
 .article .actions .ms-Spinner {
-    margin: 8px 8px 11px 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+    margin: auto 0;
+    margin-right: 0.5rem;
 }
 .article .actions .ms-Spinner {
     display: inline-block;
     vertical-align: middle;
 }
 .article .actions .source-name {
-    line-height: 35px;
+    line-height: 48px;
     user-select: none;
     max-width: 320px;
     overflow: hidden;
@@ -114,6 +118,8 @@
     border-bottom: none;
 }
 .side-article-wrapper .article > .ms-Stack {
+    height: 48px;
+    padding: 0 0.5rem;
     border-top: 1px solid var(--neutralQuaternaryAlt);
 }
 .list-feed-container:first-child::before,
@@ -136,7 +142,7 @@
     background: var(--white);
 }
 .list-feed-container {
-    width: 350px;
+    width: min(35rem, 40%);
     background-color: var(--neutralLighterAlt);
     height: 100%;
     position: relative;
@@ -210,11 +216,11 @@
 .magazine-feed > .empty,
 .compact-feed > .empty {
     width: 100%;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 128px);
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: var(--neutralSecondary);
-    font-size: 14px;
+    font-size: 1rem;
     user-select: none;
 }

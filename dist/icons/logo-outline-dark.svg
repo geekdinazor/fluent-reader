@@ -2,8 +2,8 @@
   <defs>
     <style>
       :root {
-        --white: #1f1f1f;
-        --primary: #3f3f3f;
+        --white: #141a1e;
+        --primary: #242326;
       }
 
       .cls-1 {

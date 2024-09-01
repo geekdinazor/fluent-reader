@@ -376,13 +376,11 @@ class Article extends React.Component<ArticleProps, ArticleState> {
 
     render = () => (
         <FocusZone className="article">
-            <Stack horizontal style={{ height: 36 }}>
-                <span style={{ width: 96 }}></span>
+            <Stack horizontal>
                 <Stack
                     className="actions"
                     grow
-                    horizontal
-                    tokens={{ childrenGap: 12 }}>
+                    horizontal>
                     <Stack.Item grow>
                         <span className="source-name">
                             {this.state.loaded ? (
@@ -458,7 +456,7 @@ class Article extends React.Component<ArticleProps, ArticleState> {
                         menuProps={this.moreMenuProps()}
                     />
                 </Stack>
-                <Stack horizontal horizontalAlign="end" style={{ width: 112 }}>
+                <Stack horizontal horizontalAlign="end">
                     <CommandBarButton
                         title={intl.get("close")}
                         iconProps={{ iconName: "BackToWindow" }}

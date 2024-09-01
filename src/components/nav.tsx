@@ -94,16 +94,16 @@ class Nav extends React.Component<NavProps, NavState> {
         document.removeEventListener("keydown", this.navShortcutsHandler)
     }
 
-    minimize = () => {
-        window.utils.minimizeWindow()
-    }
-    maximize = () => {
-        window.utils.maximizeWindow()
-        this.setState({ maximized: !this.state.maximized })
-    }
-    close = () => {
-        window.utils.closeWindow()
-    }
+    // minimize = () => {
+    //     window.utils.minimizeWindow()
+    // }
+    // maximize = () => {
+    //     window.utils.maximizeWindow()
+    //     this.setState({ maximized: !this.state.maximized })
+    // }
+    // close = () => {
+    //     window.utils.closeWindow()
+    // }
 
     canFetch = () =>
         this.props.state.sourceInit &&
@@ -205,8 +205,7 @@ class Nav extends React.Component<NavProps, NavState> {
                         onClick={this.props.settings}>
                         <Icon iconName="Settings" />
                     </a>
-                    <span className="seperator"></span>
-                    <a
+                    {/* <a
                         className="btn system"
                         title={intl.get("nav.minimize")}
                         onClick={this.minimize}
@@ -234,7 +233,7 @@ class Nav extends React.Component<NavProps, NavState> {
                         title={intl.get("close")}
                         onClick={this.close}>
                         <Icon iconName="Cancel" />
-                    </a>
+                    </a> */}
                 </div>
                 {!this.canFetch() && (
                     <ProgressIndicator

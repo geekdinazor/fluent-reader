@@ -1,5 +1,4 @@
 :root {
-    --neutralLighterAltOpacity: #faf9f8cc;
     --neutralLighterAlt: #faf9f8;
     --neutralLighter: #f3f2f1;
     --neutralLight: #edebe9;
@@ -16,20 +15,19 @@
     --black: #000;
     --white: #fff;
     --whiteConstant: #fff;
-    --primary: #0078d4;
-    --navHeight: 32px;
+    --primary: #1f29d1;
+    --navHeight: 48px;
     --transition-timing: cubic-bezier(0.1, 0.9, 0.2, 1);
     --blur: saturate(150%) blur(20px);
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --neutralLighterAltOpacity: #282828cc;
-        --neutralLighterAlt: #282828;
-        --neutralLighter: #313131;
-        --neutralLight: #3f3f3f;
-        --neutralQuaternaryAlt: #484848;
-        --neutralQuaternary: #4f4f4f;
-        --neutralTertiaryAlt: #6d6d6d;
+        --neutralLighterAlt: #141a1e;
+        --neutralLighter: #141a1e;
+        --neutralLight: #141a1e;
+        --neutralQuaternaryAlt: #171519;
+        --neutralQuaternary: #171519;
+        --neutralTertiaryAlt: #242326;
         --neutralTertiary: #c8c8c8;
         --neutralSecondaryAlt: #d2d0ce;
         --neutralSecondary: #d0d0d0;
@@ -38,12 +36,12 @@
         --neutralDark: #f4f4f4;
         --neutralDarker: #f4f4f4;
         --black: #f8f8f8;
-        --white: #1f1f1f;
+        --white: #141a1e;
         --whiteConstant: #f8f8f8;
     }
 }
 body.darwin {
-    --navHeight: 38px;
+    --navHeight: 48px;
 }
 
 html,
@@ -85,14 +83,14 @@ body.linux {
 .ms-Button,
 .ms-ContextualMenu-item button {
     cursor: default;
-    font-size: 13px;
+    font-size: 1rem;
     user-select: none;
 }
 .ms-Nav-link,
 .ms-Nav-chevronButton {
-    font-size: 12px;
-    line-height: 32px;
-    height: 32px;
+    font-size: 0.85rem;
+    line-height: 2;
+    height: 2rem;
     background-color: transparent;
     color: var(--neutralPrimary);
 }
@@ -187,10 +185,9 @@ nav .progress {
     background: none;
 }
 #root > nav span.title {
-    font-size: 12px;
+    font-size: 1rem;
     line-height: var(--navHeight);
     vertical-align: top;
-    letter-spacing: 2px;
     margin: 0 4px;
     display: inline-block;
     max-width: 280px;
@@ -207,29 +204,15 @@ body.darwin #root > nav span.title {
     user-select: none;
     -webkit-app-region: none;
 }
-.btn-group .seperator {
-    display: inline-block;
-    width: var(--navHeight);
-    font-size: 12px;
-    color: #c8c6c4;
-    text-align: center;
-    vertical-align: middle;
-}
-body.darwin .btn-group .seperator {
-    display: none;
-}
-.btn-group .seperator::before {
-    content: "|";
-}
 .btn-group .btn {
     display: inline-block;
     width: 48px;
-    height: 32px;
+    height: 2rem;
     text-decoration: none;
     text-align: center;
-    line-height: 32px;
+    line-height: 2;
     color: var(--black);
-    font-size: 14px;
+    font-size: 1rem;
     vertical-align: top;
 }
 #root > nav .btn-group .btn,

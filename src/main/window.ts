@@ -1,5 +1,5 @@
 import windowStateKeeper = require("electron-window-state")
-import { BrowserWindow, nativeTheme, app } from "electron"
+import { BrowserWindow, nativeTheme, app, systemPreferences } from "electron"
 import path = require("path")
 import { setThemeListener } from "./settings"
 import { setUtilsListeners } from "./utils"
@@ -57,10 +57,10 @@ export class WindowManager {
                 height: this.mainWindowState.height,
                 minWidth: 992,
                 minHeight: 600,
-                frame: process.platform === "darwin",
-                titleBarStyle: "hiddenInset",
+                // frame: process.platform === "darwin",
+                // titleBarStyle: "hiddenInset",
                 fullscreenable: process.platform === "darwin",
-                show: false,
+                // show: false,
                 webPreferences: {
                     webviewTag: true,
                     contextIsolation: true,

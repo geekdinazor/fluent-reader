@@ -6,15 +6,15 @@ body {
     font-family: "Segoe UI", "Source Han Sans Regular", sans-serif;
 }
 body {
-    padding: 12px 96px 32px;
+    padding: 1rem 2rem;
     overflow: hidden scroll;
 }
 body.rtl {
     direction: rtl;
 }
 body.vertical {
-    padding: 32px;
-    padding-right: 96px;
+    padding: 1rem 2rem;
+    padding-right: max(10vw, 2rem);
     writing-mode: vertical-rl;
     overflow: scroll hidden;
 }
@@ -64,7 +64,9 @@ a:active {
     }
 }
 #main {
-    max-width: 700px;
+    max-width: 40rem;
+    min-width: 0px;
+    width: 100%;
     margin: 0 auto;
     display: none;
 }
@@ -76,7 +78,7 @@ body.vertical #main {
 #main.show {
     display: block;
     animation-name: fadeIn;
-    animation-duration: 0.367s;
+    animation-duration: 0.25s;
     animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
     animation-fill-mode: both;
 }

@@ -1,16 +1,18 @@
 .info {
     display: flex;
+    align-items: center;
     position: relative;
     margin: 10px 12px;
     line-height: 16px;
 }
 .info img {
-    width: 16px;
-    height: 16px;
+    width: 1.5rem;
+    height: auto;
     margin-right: 5px;
 }
 .info span.name {
-    font-size: 12px;
+    font-size: 1rem;
+    font-weight: 600;
     vertical-align: top;
     display: inline-block;
     flex-grow: 1;
@@ -27,7 +29,7 @@
     margin: 0 5px;
 }
 .info span.time {
-    font-size: 12px;
+    font-size: 0.85rem;
 }
 
 .read-indicator,
@@ -46,14 +48,14 @@
     margin: 5px;
     border-radius: 3px;
     background-color: #ffaa44;
-    font-size: 10px;
+    font-size: 1rem;
     box-sizing: border-box;
 }
 .starred-indicator::after {
     content: "★";
     vertical-align: top;
     color: #ffaa44;
-    font-size: 11px;
+    font-size: 1rem;
     line-height: 16px;
 }
 
@@ -152,18 +154,18 @@
     transform: translateY(-144px);
 }
 .default-card h3.title {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    font-weight: normal;
     margin: 10px 12px;
     position: relative;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
 .default-card p.snippet {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 20px;
     margin: 10px 12px;
     display: -webkit-box;
@@ -182,6 +184,7 @@
 
 .list-card {
     display: flex;
+    padding: 1rem;
     transition: box-shadow linear 0.08s;
     border-bottom: 1px solid var(--neutralQuaternaryAlt);
     box-shadow: #0000 0 5px 15px;
@@ -196,7 +199,6 @@
 .list-card div.head {
     width: 80px;
     height: 80px;
-    margin: 8px 0 8px 10px;
 }
 .list-card div.head img {
     width: 80px;
@@ -206,17 +208,16 @@
 }
 .list-card .data {
     flex-grow: 1;
-    margin: 8px 10px;
+    margin-left: 1rem;
     overflow: hidden;
 }
 .list-card .info {
     margin: 0 0 8px;
-    height: 16px;
 }
 .list-card h3.title {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: normal;
     margin: 0;
     position: relative;
     -webkit-line-clamp: 3;
@@ -226,8 +227,8 @@
 }
 .list-card p.snippet {
     color: var(--neutralSecondary);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1;
     margin: 4px 0 0;
     -webkit-line-clamp: 2;
     overflow: hidden;
@@ -238,8 +239,10 @@
     content: "";
     display: block;
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
-    border-left: 2px solid var(--primary);
+    border-left: 4px solid var(--primary);
 }
 .list-card.read,
 .list-card.read p.snippet {
@@ -301,14 +304,14 @@
     margin: 0 0 12px;
 }
 .magazine-card h3.title {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1rem;
+    line-height: 1.5;
     font-weight: 600;
     -webkit-line-clamp: 2;
 }
 .magazine-card p.snippet {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.5;
     -webkit-line-clamp: 3;
 }
 
@@ -316,8 +319,8 @@
     height: 31px;
     display: flex;
     border-bottom: 1px solid var(--neutralQuaternaryAlt);
-    font-size: 14px;
-    line-height: 31px;
+    font-size: 1rem;
+    line-height: 2;
     padding: 0 9px;
     transition: box-shadow linear 0.08s, background-color linear 0.08s;
 }
@@ -361,5 +364,5 @@
     color: var(--neutralSecondaryAlt);
 }
 .compact-card .time {
-    font-size: 12px;
+    font-size: 0.85rem;
 }
