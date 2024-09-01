@@ -248,6 +248,11 @@ body.darwin .list-main .article-search {
     margin-left: 0;
 }
 
+.main.menu-on,
+.list-main.menu-on {
+    margin-left: 280px;
+}
+
 @media (min-width: 1440px) {
     #root > nav.menu-on {
         padding-left: 296px;
@@ -290,10 +295,6 @@ body.darwin .list-main .article-search {
         width: 120%;
         height: 120%;
         box-shadow: inset 5px 0 25px #0004;
-    }
-    .main.menu-on,
-    .list-main.menu-on {
-        margin-left: 280px;
     }
     .menu-on .article-search {
         left: 280px;
