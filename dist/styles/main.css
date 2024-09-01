@@ -37,9 +37,6 @@
 .menu-container {
     pointer-events: none;
 }
-.menu-container.show {
-    pointer-events: unset;
-}
 .article-container {
     z-index: 6;
 }
@@ -47,7 +44,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 280px;
+    width: var(--sidebar-width);
     height: 100%;
     background-color: var(--neutralLighterAlt);
     box-shadow: 5px 0 25px #0004;
@@ -56,6 +53,7 @@
 }
 .menu-container.show .menu {
     transform: none;
+    pointer-events: auto;
 }
 body.blur .menu .btn-group {
     --black: var(--neutralSecondaryAlt);
@@ -250,7 +248,7 @@ body.darwin .list-main .article-search {
 
 .main.menu-on,
 .list-main.menu-on {
-    margin-left: 280px;
+    margin-left: var(--sidebar-width);
 }
 
 @media (min-width: 1440px) {
@@ -268,7 +266,7 @@ body.darwin .list-main .article-search {
         color: var(--whiteConstant);
     }
     .menu-container {
-        width: 280px;
+        width: var(--sidebar-width);
         background: none;
         backdrop-filter: none;
     }
@@ -297,11 +295,11 @@ body.darwin .list-main .article-search {
         box-shadow: inset 5px 0 25px #0004;
     }
     .menu-on .article-search {
-        left: 280px;
+        left: var(--sidebar-width);
         max-width: calc(100% - 728px);
     }
     body.darwin .menu-on .article-search {
-        left: 280px;
+        left: var(--sidebar-width);
         max-width: calc(100% - 556px);
     }
     .list-main.menu-on .article-search {

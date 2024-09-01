@@ -19,6 +19,7 @@
     --navHeight: 48px;
     --transition-timing: cubic-bezier(0.1, 0.9, 0.2, 1);
     --blur: saturate(150%) blur(20px);
+    --sidebar-width: 280px;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -190,7 +191,7 @@ nav .progress {
     vertical-align: top;
     margin: 0 4px;
     display: inline-block;
-    max-width: 280px;
+    max-width: var(--sidebar-width);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

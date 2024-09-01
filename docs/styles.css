@@ -66,9 +66,9 @@ a:active {
     position: relative;
 }
 .light-container .screenshot {
-    margin: 0 auto -280px;
+    margin: 0 auto calc(-1 * var(--sidebar-width));
     position: relative;
-    top: -280px;
+    top: calc(-1 * var(--sidebar-width));
 }
 .light-container h1,
 .dark-container h1 {

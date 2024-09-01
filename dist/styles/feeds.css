@@ -142,7 +142,7 @@
     background: var(--white);
 }
 .list-feed-container {
-    width: min(35rem, 40%);
+    width: clamp(var(--sidebar-width), 40%, 35rem);
     background-color: var(--neutralLighterAlt);
     height: 100%;
     position: relative;
@@ -209,7 +209,7 @@
     margin: 16px 0;
 }
 .flex-fix {
-    min-width: 280px;
+    min-width: var(--sidebar-width);
 }
 .cards-feed-container > .empty,
 .list-feed > .empty,
