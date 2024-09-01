@@ -377,10 +377,7 @@ class Article extends React.Component<ArticleProps, ArticleState> {
     render = () => (
         <FocusZone className="article">
             <Stack horizontal>
-                <Stack
-                    className="actions"
-                    grow
-                    horizontal>
+                <Stack className="actions" grow horizontal>
                     <Stack.Item grow>
                         <span className="source-name">
                             {this.state.loaded ? (
