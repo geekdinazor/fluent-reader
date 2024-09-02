@@ -24,8 +24,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --neutralLighterAlt: #141a1e;
-        --neutralLighter: #141a1e;
-        --neutralLight: #141a1e;
+        --neutralLighter: #1b2125;
+        --neutralLight: #1b2125;
         --neutralQuaternaryAlt: #171519;
         --neutralQuaternary: #171519;
         --neutralTertiaryAlt: #242326;

@@ -53,6 +53,13 @@ a:active {
     text-decoration: underline;
 }
 
+blockquote {
+    border-left: 2px solid var(--gray);
+    margin: 1rem 0;
+    padding: 0;
+    padding-left: 2rem;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -133,9 +140,4 @@ article pre {
     word-break: normal;
     overflow-wrap: normal;
     white-space: pre-wrap;
-}
-article blockquote {
-    border-left: 2px solid var(--gray);
-    margin: 1em 0;
-    padding: 0 40px;
 }

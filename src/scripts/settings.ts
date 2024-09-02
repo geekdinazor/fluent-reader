@@ -14,8 +14,8 @@ let darkTheme: IPartialTheme = {
     ...lightTheme,
     palette: {
         neutralLighterAlt: "#141a1e",
-        neutralLighter: "#141a1e",
-        neutralLight: "#141a1e",
+        neutralLighter: "#1B2125",
+        neutralLight: "#1B2125",
         neutralQuaternaryAlt: "#171519",
         neutralQuaternary: "#171519",
         neutralTertiaryAlt: "#242326",
