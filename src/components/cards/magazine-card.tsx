@@ -3,6 +3,7 @@ import { Card } from "./card"
 import CardInfo from "./info"
 import Highlights from "./highlights"
 import { SourceTextDirection } from "../../scripts/models/source"
+import { htmlDecode } from "../../scripts/utils"
 
 const className = (props: Card.Props) => {
     let cn = ["card", "magazine-card"]
@@ -27,7 +28,7 @@ const MagazineCard: React.FunctionComponent<Card.Props> = props => (
             <div>
                 <h3 className="title">
                     <Highlights
-                        text={props.item.title}
+                        text={htmlDecode(props.item.title)}
                         filter={props.filter}
                         title
                     />

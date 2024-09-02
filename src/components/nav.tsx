@@ -3,7 +3,7 @@ import intl from "react-intl-universal"
 import { Icon } from "@fluentui/react/lib/Icon"
 import { AppState } from "../scripts/models/app"
 import { ProgressIndicator, IObjectWithKey } from "@fluentui/react"
-import { getWindowBreakpoint } from "../scripts/utils"
+import { getWindowBreakpoint, htmlDecode } from "../scripts/utils"
 import { WindowStateListenerType } from "../schema-types"
 
 type NavProps = {
@@ -152,7 +152,9 @@ class Nav extends React.Component<NavProps, NavState> {
                         />
                     </a>
                 </div>
-                <span className="title">{this.props.state.title}</span>
+                <span className="title">
+                    {htmlDecode(this.props.state.title)}
+                </span>
                 <div className="btn-group" style={{ float: "right" }}>
                     <a
                         className={"btn" + this.fetching()}

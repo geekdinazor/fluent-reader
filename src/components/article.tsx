@@ -18,7 +18,7 @@ import {
     SourceTextDirection,
 } from "../scripts/models/source"
 import { shareSubmenu } from "./context-menu"
-import { platformCtrl, decodeFetchResponse } from "../scripts/utils"
+import { platformCtrl, htmlDecode, decodeFetchResponse } from "../scripts/utils"
 
 const FONT_SIZE_OPTIONS = [12, 13, 14, 15, 16, 17, 18, 19, 20]
 
@@ -356,7 +356,7 @@ class Article extends React.Component<ArticleProps, ArticleState> {
         const h = encodeURIComponent(
             renderToString(
                 <>
-                    <p className="title">{this.props.item.title}</p>
+                    <p className="title">{htmlDecode(this.props.item.title)}</p>
                     <p className="date">
                         {this.props.item.date.toLocaleString(
                             this.props.locale,

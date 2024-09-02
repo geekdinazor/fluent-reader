@@ -4,6 +4,7 @@ import CardInfo from "./info"
 import Highlights from "./highlights"
 import { ViewConfigs } from "../../schema-types"
 import { SourceTextDirection } from "../../scripts/models/source"
+import { htmlDecode } from "../../scripts/utils"
 
 const className = (props: Card.Props) => {
     let cn = ["card", "list-card"]
@@ -30,7 +31,7 @@ const ListCard: React.FunctionComponent<Card.Props> = props => (
             <CardInfo source={props.source} item={props.item} />
             <h3 className="title">
                 <Highlights
-                    text={props.item.title}
+                    text={htmlDecode(props.item.title)}
                     filter={props.filter}
                     title
                 />

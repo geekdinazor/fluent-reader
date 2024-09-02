@@ -4,6 +4,7 @@ import CardInfo from "./info"
 import Time from "../utils/time"
 import Highlights from "./highlights"
 import { SourceTextDirection } from "../../scripts/models/source"
+import { htmlDecode } from "../../scripts/utils"
 
 const className = (props: Card.Props) => {
     let cn = ["card", "compact-card"]
@@ -22,7 +23,7 @@ const CompactCard: React.FunctionComponent<Card.Props> = props => (
         <div className="data">
             <span className="title">
                 <Highlights
-                    text={props.item.title}
+                    text={htmlDecode(props.item.title)}
                     filter={props.filter}
                     title
                 />
