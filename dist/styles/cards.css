@@ -196,9 +196,12 @@
 .list-card:active {
     box-shadow: #0000 0 5px 15px, inset #0004 0 0 15px;
 }
-.list-card div.head {
-    width: 80px;
-    height: 80px;
+@media (min-width: 992px) {
+    .list-card div.head {
+        flex: 0 0 auto;
+        width: 80px;
+        height: 80px;
+    }
 }
 .list-card div.head img {
     width: 80px;

@@ -22,9 +22,9 @@ const ListCard: React.FunctionComponent<Card.Props> = props => (
         {...Card.bindEventsToProps(props)}
         data-iid={props.item._id}
         data-is-focusable>
-        {props.item.thumb && props.viewConfigs & ViewConfigs.ShowCover ? (
+        {props.viewConfigs & ViewConfigs.ShowCover ? (
             <div className="head">
-                <img src={props.item.thumb} />
+                {props.item.thumb ? <img src={props.item.thumb} /> : null}
             </div>
         ) : null}
         <div className="data">
