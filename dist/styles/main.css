@@ -264,7 +264,7 @@ body.darwin .list-main .article-search {
 
 @media (min-width: 1440px) {
     #root > nav.menu-on {
-        padding-left: 296px;
+        padding-left: calc(var(--sidebar-width) + 1rem);
     }
     #root > nav.menu-on span.title,
     body.darwin #root > nav.menu-on span.title {

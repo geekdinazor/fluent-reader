@@ -19,7 +19,7 @@
     --navHeight: 48px;
     --transition-timing: cubic-bezier(0.1, 0.9, 0.2, 1);
     --blur: saturate(150%) blur(20px);
-    --sidebar-width: 280px;
+    --sidebar-width: clamp(12rem, 20vw, 18rem);
 }
 @media (prefers-color-scheme: dark) {
     :root {
