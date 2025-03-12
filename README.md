@@ -10,6 +10,22 @@
 </p>
 <hr />
 
+> [!NOTE]
+>
+> This is a fork of https://github.com/yang991178/fluent-reader with UI tweaks, including the use of native window decorations, spacing and sizing improvements, a better color scheme, and enhancements to the menu and readability.
+>
+> ## Screenshot
+>
+> ![Screenshot](docs/imgs/screenshot2.png)
+
+> [!WARNING]
+>
+> This fork use Noto Sans font for better readability. To best results, Noto Sans should installed in your device. 
+
+> [!IMPORTANT]
+>
+> Rest of the README referring original app. If you want to use the UI improvements in this repo, you must manually build the application using the instructions in  [Build from source](#build-from-source) section.
+
 ## Download
 
 For Windows 10 users, the recommended way of installation is through [Microsoft Store](https://www.microsoft.com/store/apps/9P71FC94LRH8?cid=github). 
