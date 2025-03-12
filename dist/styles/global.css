@@ -15,7 +15,7 @@
     --black: #000;
     --white: #fff;
     --whiteConstant: #fff;
-    --primary: #dc322f;
+    --primary: #1565C0;
     --navHeight: 48px;
     --transition-timing: cubic-bezier(0.1, 0.9, 0.2, 1);
     --blur: saturate(150%) blur(20px);

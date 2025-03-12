@@ -224,8 +224,8 @@
 }
 .list-card p.snippet {
     color: var(--neutralSecondary);
-    font-size: 1rem;
-    line-height: 1;
+    font-size: 0.8rem;
+    line-height: 2;
     margin: 4px 0 0;
     -webkit-line-clamp: 2;
     overflow: hidden;

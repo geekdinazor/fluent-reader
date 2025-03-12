@@ -7,7 +7,7 @@ import { SourceTextDirection } from "./models/source"
 
 let lightTheme: IPartialTheme = {
     defaultFontStyle: {
-        fontFamily: '"Segoe UI", "Source Han Sans Regular", sans-serif',
+        fontFamily: '"Noto Sans", sans-serif',
     },
 }
 let darkTheme: IPartialTheme = {
@@ -27,16 +27,16 @@ let darkTheme: IPartialTheme = {
         neutralDark: "#f4f4f4",
         black: "#f8f8f8",
         white: "#141a1e",
-        themePrimary: "#dc322f",
+        themePrimary: "#448AFF",
         themeLighterAlt: "#171519",
         themeLighter: "#171519",
         themeLight: "#112d43",
         themeTertiary: "#862f2d",
         themeSecondary: "#bd3331",
-        themeDarkAlt: "#dc322f",
+        themeDarkAlt: "#448AFF",
         themeDark: "#f8f8f8",
         themeDarker: "#f8f8f8",
-        accent: "#dc322f",
+        accent: "#448AFF",
     },
 }
 
@@ -44,23 +44,23 @@ export function setThemeDefaultFont(locale: string) {
     switch (locale) {
         case "zh-CN":
             lightTheme.defaultFontStyle.fontFamily =
-                '"Segoe UI", "Source Han Sans SC Regular", "Microsoft YaHei", sans-serif'
+                '"Noto Sans", sans-serif'
             break
         case "zh-TW":
             lightTheme.defaultFontStyle.fontFamily =
-                '"Segoe UI", "Source Han Sans TC Regular", "Microsoft JhengHei", sans-serif'
+                '"Noto Sans", sans-serif'
             break
         case "ja":
             lightTheme.defaultFontStyle.fontFamily =
-                '"Segoe UI", "Source Han Sans JP Regular", "Yu Gothic UI", sans-serif'
+               '"Noto Sans", sans-serif'
             break
         case "ko":
             lightTheme.defaultFontStyle.fontFamily =
-                '"Segoe UI", "Source Han Sans KR Regular", "Malgun Gothic", sans-serif'
+                '"Noto Sans", sans-serif'
             break
         default:
             lightTheme.defaultFontStyle.fontFamily =
-                '"Segoe UI", "Source Han Sans Regular", sans-serif'
+                '"Noto Sans", sans-serif'
     }
     darkTheme.defaultFontStyle.fontFamily =
         lightTheme.defaultFontStyle.fontFamily
